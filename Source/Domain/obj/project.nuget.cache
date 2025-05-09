@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "zTPUfM6yXTE=",
+  "dgSpecHash": "bRYhdQj0F6g=",
   "success": true,
   "projectFilePath": "F:\\Projetos\\RestaurantReservation\\Source\\Domain\\Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\tomas\\.nuget\\packages\\oneof\\3.0.271\\oneof.3.0.271.nupkg.sha512"
+  ],
   "logs": []
 }
