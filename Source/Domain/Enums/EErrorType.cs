@@ -4,6 +4,8 @@ namespace Domain.Enums;
 
 public enum EErrorType
 {
-    [Description("INVALID_USER")]
-    InvalidUser
+    [Description("CONFLICT_ERROR")]
+    ConflictError,
+    [Description("VALIDATION_ERROR")]
+    ValidationError
 }

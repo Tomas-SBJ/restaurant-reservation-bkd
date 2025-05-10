@@ -1,4 +1,4 @@
-namespace Domain.Notifications.Commons;
+namespace Domain.Notifications.Base;
 
 public abstract class Notifiable
 {

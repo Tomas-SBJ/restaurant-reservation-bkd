@@ -1,4 +1,4 @@
-namespace Domain.Notifications.Commons;
+namespace Domain.Notifications.Base;
 
 public record Notification(
     string Type, 
