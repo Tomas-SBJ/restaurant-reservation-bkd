@@ -19,7 +19,7 @@ internal class CreateUser(
             return conflict;
         }
 
-        var userResult = User.CreateUser(dto.Name, dto.Email, dto.Password, null);
+        var userResult = User.CreateUser(dto.Name, dto.Email, dto.Password);
 
         if (userResult.IsT1)
             return userResult.AsT1;

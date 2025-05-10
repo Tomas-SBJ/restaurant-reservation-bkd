@@ -25,7 +25,7 @@ public class User : BaseEntity
         string name,
         string email,
         string password,
-        EUserRole? role)
+        EUserRole? role = null)
     {
         var notifications = new ValidationNotifiable();
         
@@ -44,6 +44,8 @@ public class User : BaseEntity
         if (notifications.IsInvalid)
             return notifications;
         
-        return new User(name, email, password, role);
+        var hashPassword = BCrypt.Net.BCrypt.HashPassword(password);
+        
+        return new User(name, email, hashPassword, role);
     }
 }
