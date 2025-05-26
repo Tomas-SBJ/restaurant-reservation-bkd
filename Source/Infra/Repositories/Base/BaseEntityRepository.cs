@@ -1,8 +1,8 @@
 using Domain.Entities.Abstractions;
-using Infra.Data.Contexts;
+using Infra.Contexts;
 using Microsoft.EntityFrameworkCore;
 
-namespace Infra.Data.Repositories.Base;
+namespace Infra.Repositories.Base;
 
 public class BaseEntityRepository<TEntity>(DatabaseContext context) : IBaseEntityRepository<TEntity> 
     where TEntity : BaseEntity

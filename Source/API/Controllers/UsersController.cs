@@ -26,7 +26,7 @@ public class UsersController(
         
         return result.Match<IActionResult>(
             guid => CreatedAtAction(nameof(CreateUser), new { guid }),
-            notifiable => BadRequest(notifiable.Notifications),
+            validation => BadRequest(validation.Notifications),
             conflict => Conflict(conflict.Notifications));
     }
 }

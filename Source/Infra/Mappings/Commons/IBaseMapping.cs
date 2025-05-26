@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace Infra.Data.Mappings.Commons;
+namespace Infra.Mappings.Commons;
 
 public interface IBaseMapping
 {

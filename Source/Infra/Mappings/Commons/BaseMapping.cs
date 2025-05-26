@@ -2,7 +2,7 @@ using Domain.Entities.Abstractions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Infra.Data.Mappings.Commons;
+namespace Infra.Mappings.Commons;
 
 public abstract class BaseMapping<TEntity> : IBaseMapping where TEntity : BaseEntity
 {

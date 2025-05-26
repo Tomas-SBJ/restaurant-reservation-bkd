@@ -1,6 +1,7 @@
 ﻿using Domain.Entities.Abstractions;
 using Domain.Entities.Users;
-using Infra.Data.Repositories.Base;
+using Infra.Repositories;
+using Infra.Repositories.Base;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Infra;
@@ -16,7 +17,7 @@ public static class DependencyInjection
     private static void AddRepositories(this IServiceCollection services)
     {
         services.AddScoped(typeof(IBaseEntityRepository<>), typeof(BaseEntityRepository<>));
-        services.AddScoped<IUserRepository, IUserRepository>();
+        services.AddScoped<IUserRepository, UserRepository>();
     }
     
     private static void AddPostgreSql(this IServiceCollection services)

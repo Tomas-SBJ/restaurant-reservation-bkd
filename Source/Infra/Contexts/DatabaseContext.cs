@@ -1,7 +1,7 @@
-using Infra.Data.Mappings.Commons;
+using Infra.Mappings.Commons;
 using Microsoft.EntityFrameworkCore;
 
-namespace Infra.Data.Contexts;
+namespace Infra.Contexts;
 
 public class DatabaseContext(DbContextOptions options) : DbContext(options)
 {
