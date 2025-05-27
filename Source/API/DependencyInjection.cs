@@ -6,11 +6,11 @@ namespace API;
 
 public static class DependencyInjection
 {
-    public static void AddApi(this IServiceCollection services)
+    public static void AddApi(this IServiceCollection services, IConfiguration configuration)
     {
         services.AddValidatorsFromAssemblyContaining<CreateUserRequestValidator>();
         
-        services.AddBase();
+        services.AddBase(configuration);
 
         services.AddControllers();
         services.AddMemoryCache();

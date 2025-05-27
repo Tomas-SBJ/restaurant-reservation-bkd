@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:17
+    container_name: restaurant_postgres_db
+    environment:
+      POSTGRES_PASSWORD: "restaurant"
+      POSTGRES_USER: "restaurant"
+      POSTGRES_DB: "restaurant-reservation"
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
